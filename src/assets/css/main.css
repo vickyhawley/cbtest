@@ -1,0 +1,109 @@
+@font-face{
+    font-family: 'Poppins_Regular';
+    src:url('../fonts/Poppins-Regular.ttf');
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+
+color: #000000;
+    }
+    @font-face{
+        font-family: 'Poppins_Medium';
+        src:url('../fonts/Poppins-Medium.ttf') format('truetype');
+        position: absolute;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+        }
+    
+    @font-face{
+        font-family: 'Poppins_bold';
+        src:url('../fonts/Poppins-Bold.ttf') format('truetype');
+        font-style: normal;
+font-weight: 700;
+text-transform: uppercase;
+    }
+
+    #heroBackground {
+        background-image: url(../images/HeroBG.png);
+        background-size: cover;
+        position: absolute;
+    left: 0%;
+    right: 15.88%;
+    top: 19.41%;
+    bottom: 0%;
+    }
+    
+    #greenBlob {
+        position: absolute;
+    left: 5.77%;
+    right: 65.57%;
+    top: 13.18%;
+    bottom: 46.33%;
+    z-index: 400;
+    }
+    
+    #greenBlob2 {
+        position: absolute;
+    left: 78.91%;
+    right: -7.58%;
+    top: 93.32%;
+    bottom: -39.77%;
+    z-index: 999;
+    }
+    #logoContainer {
+            position: absolute;
+    left: 14.77%;
+    right: 71.47%;
+    top: 23.18%;
+    bottom: 71.97%;
+    z-index: 600 !important;
+    height: 54px;
+    width: 272px;
+    }
+    #logo {
+    font-family: 'Poppins_bold', helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+    #heroTitle {
+        position: absolute;
+        left: 29.69%;
+        right: 43.05%;
+        top: 48.16%;
+        bottom: 34.59%;
+        font-family: "Poppins_bold";
+        font-size: 64px;
+        line-height: 96px;
+        
+        color: #212121;
+        }
+
+        #button {
+            position: absolute;
+        left: 71.67%;
+        right: 19.47%;
+        top: 23.81%;
+        bottom: 72.6%;
+        background: linear-gradient(90deg, #73E0A9 0%, #5B68DF 100%);
+        border-radius: 100px;
+        }
+        #heroContainer {
+            position: absolute;
+        width: 1977.02px;
+        height: 1113.04px;
+        left: -223px;
+        top: -216px;
+        }
