@@ -13,10 +13,9 @@
 <script>
 
 export default {
-    props: [
+     props: [
         'id', 'title', 'price', 'image', 'stock'
-    ]
-
+    ],
 }
 </script>
 

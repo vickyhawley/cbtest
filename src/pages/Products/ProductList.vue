@@ -1,20 +1,23 @@
 <template>
 <section class="containerList">
-   <product-item v-for="product in filteredProducts" :key="product.id" :title="product.product_name" :price="product.price" :image="product.image" :stock="product.stock_count"></product-item>
+   <product-item v-for="result in filteredProducts" :key="result.id" :title="result.product_name" :price="result.price" :image="result.image" :stock="result.stock_count"></product-item>
    </section>
 </template>
 
 <script>
 import productItem from '../../components/ProductCard.vue'
+import results from '../../store/modules/Products/actions'
 
 export default {
-    
+
     name: 'ProductList',
     components: {
      productItem
     },
     data() {
-     return this.$store.getters['products/loadProductItems']
+        return {
+            results: results
+        }
     },
     computed: {
         filteredProducts() {
@@ -22,14 +25,15 @@ export default {
         },
     },
     created() {
-        this.loadProductItems();
+       this.loadProductItems();
     },
     methods: {
-        loadProductItems(){
-        this.$store.dispatch('products/loadProductItems');
+        loadProductItems(results) {
+           this.$store.dispatch('products/loadProductItems')
+           return results
         }
+              },
     }
-}
 </script>
 
 <style scoped>
