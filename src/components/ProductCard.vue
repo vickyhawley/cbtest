@@ -54,9 +54,11 @@ font-size: 24px;
 line-height: 36px;
 text-transform: uppercase;
 color: #212121;
+margin-bottom: -20px;
 }
 #cardText {
     padding-left: 30px;
+
 }
 #priceText {
     font-family: 'Poppins_bold';
@@ -69,7 +71,6 @@ line-height: 36px;
 text-transform: uppercase;
 
 color: #747474;
-margin-bottom: -40px;
 }
 #stockText {
     font-family: 'Poppins_bold';
@@ -82,8 +83,10 @@ line-height: 36px;
 text-transform: uppercase;
 
 color: #747474;
+margin-top: -12px;
 }
 .aligning {
     text-align: left;
+    margin-bottom: 5px;
 }
 </style>

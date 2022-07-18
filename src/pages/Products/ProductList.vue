@@ -1,7 +1,6 @@
 <template>
 <section class="containerList">
    <product-item v-for="product in filteredProducts" :key="product.id" :title="product.product_name" :price="product.price" :image="product.image" :stock="product.stock_count"></product-item>
-   <h4>{{ title }}</h4>
    </section>
 </template>
 
